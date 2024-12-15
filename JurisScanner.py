@@ -10,8 +10,8 @@ API_KEY = os.getenv("API_KEY")
 
 # Configure a API Key
 genai.configure(api_key=API_KEY)
-primary_model = genai.GenerativeModel("learnlm-1.5-pro-experimental")
-verification_model = genai.GenerativeModel("learnlm-1.5-pro-experimental")
+primary_model = genai.GenerativeModel("gemini-1.5-flash")
+verification_model = genai.GenerativeModel("gemini-1.5-flash")
 
 def extract_text_from_pdf(pdf_path):
     with open(pdf_path, 'rb') as pdf_file:
